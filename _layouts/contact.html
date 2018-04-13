@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<section class="page">
+
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="page-content">
+    {{ content }}
+  </div>
+
+  <div class="page-contact">
+    <aside class="in-grid contact-infos">
+      <ul>
+        <li>
+          <i class="fa fa-envelope-o"></i>
+          cricodeclub[at]gmail[dot]com
+        </li>
+        <li>
+          <i class="fa fa-github"></i>
+          <a href="https://github.com/{{ site.github_username }}" target="_blank">@cricodeclub</a>
+        </li>
+        <li>
+          <i class="fa fa-twitter-square"></i>
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">@cricodeclub</a>
+        </li>
+      </ul>
+    </aside>
+
+    <form action="https://formspree.io/cricodeclub@gmail.com"
+      method="POST" class="in-grid contact-form">
+      
+      <input type="text" name="name" placeholder="{{ site.data.contact.subject }}">
+
+      <input type="email" name="_replyto" placeholder="email">
+      
+      <textarea name="message" placeholder="{{ site.data.contact.message }}"></textarea>
+
+      <input type="hidden" name="_next" value="/thankyou" />
+
+      <button type="submit" class="button">{{ site.data.contact.send }}</button>
+    </form>
+  </div>
+</section>

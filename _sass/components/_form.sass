@@ -1,0 +1,31 @@
+form
+  input, 
+  textarea
+    background: none
+    border: 1px solid $yellow
+    padding: 15px 10px
+    font-size: 18px
+    font-family: 'exolight', sans-serif
+    margin-bottom: 10px
+    transition: border .4s
+
+    &:placeholder-shown
+      color: #666666
+    &:focus
+      outline: none
+      border-color: $blue
+
+  textarea
+    width: 100%
+    min-height: 175px
+
+  button.button
+    font-size: 18px
+    font-family: 'exolight', sans-serif
+    font-weight: normal
+    float: right
+
+  &:after
+    content: ''
+    display: block
+    clear: both

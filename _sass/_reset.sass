@@ -1,0 +1,93 @@
+*, *:after, *:before
+  box-sizing: border-box
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure
+  margin: 0
+  padding: 0
+
+body
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family
+  color: $text-color
+  background-color: #ffffff
+  -webkit-text-size-adjust: 100%
+  -webkit-font-feature-settings: "kern" 1
+  -moz-font-feature-settings: "kern" 1
+  -o-font-feature-settings: "kern" 1
+  font-feature-settings: "kern" 1
+  font-kerning: normal
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm
+  margin-bottom: $spacing-unit / 2
+
+img
+  max-width: 100%
+  vertical-align: middle
+
+figure > img
+  display: block
+
+figcaption
+  font-size: $small-font-size
+
+ul, ol
+  margin-left: $spacing-unit
+
+li
+  > ul,
+  > ol
+    margin-bottom: 0
+
+h1, h2, h3, h4, h5, h6
+  font-weight: $base-font-weight
+  font-family: 'exomedium'
+  color: $blue
+
+a
+  color: $blue
+  text-decoration: underline
+  font-family: 'exobold', sans-serif
+a:hover
+  text-decoration: none
+  color: $blue
+
+main, main.page-content
+  padding: 50px 0
+
+.wrapper
+  max-width: $content-width
+  margin-right: auto
+  margin-left: auto
+
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+h1.page-heading, h1.post-title, h1.page-title
+  font-family: 'exomedium', sans-serif
+  font-size: 32px
+  color: $blue
+  margin-bottom: 30px
+
+  h1
+    color: #ffffff
+    font-family: 'exoblack', sans-serif
+    font-size: 34px
+    margin-bottom: 0
+
+h2
+  font-size: 32px
+
+h3
+  font-size: 26px
+
+h4
+  font-size: 20px

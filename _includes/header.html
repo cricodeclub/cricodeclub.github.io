@@ -1,0 +1,34 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+
+    <div class="navigation-logo"> 
+      <a href="/">CRI Code Club</a>
+    </div>
+    
+    <div class="lang">
+      {% for tongue in site.languages %}
+        <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
+      {% endfor %}
+    </div>
+
+    <nav class="site-nav">
+      {% if site.active_lang == site.default_lang %}
+        <a class="page-link" href="/#our-actions">{{ site.data.navigation.actions }}</a>
+        <a class="page-link" href="/#about-us">{{ site.data.navigation.about }}</a>
+      {% else %}
+        <a class="page-link" href="/{{site.active_lang}}/#nos-actions">{{ site.data.navigation.actions }}</a>
+        <a class="page-link" href="/{{site.active_lang}}/#a-propos">{{ site.data.navigation.about }}</a>
+      {% endif %}
+      <a class="page-link" href="/contact">{{ site.data.navigation.contact }}</a>
+    </nav>
+
+  </div>
+</header>
+
+{% if page.layout == 'home' %}
+<section class="intro">
+  <div class="wrapper">
+    <p>{{ site.data.layout_home.intro_text }}</p>
+  </div>
+</section>
+{% endif %}

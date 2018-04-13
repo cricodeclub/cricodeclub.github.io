@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="home">
+  
+  {{ content }}
+
+  {% if site.posts.length %}
+  <h1 class="page-heading">{{ site.data.layout_home.title }}</h1>
+  
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}"></a>
+        <div class="post-image">
+          <img src="{{ post.imagesrc }}" alt="post {{ post.title }} image">
+        </div>
+        <div class="post-data">
+          <h2>
+            {{ post.title }}
+          </h2>
+
+          <div class="post-preview">
+            {{ post.content | truncate: 90 }}
+          </div>
+
+          <button class="button button-yellow">
+            {{ site.data.navigation.see }}
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+          </button>
+
+          <span class="post-author">{{ post.author }}</span>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

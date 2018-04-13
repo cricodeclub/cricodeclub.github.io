@@ -1,0 +1,33 @@
+title: CRI Code Club
+
+description:
+  fr: Le CRI Code Club est un club étudiant du Centre de Recherches Interdisciplinaires (CRI). Nous organisons des ateliers d’introduction au développement web et des formations plus longues basées sur la pédagogie de projet.
+  en: CRI Code Club is a student’s association created in September 2016 at the Center for Research and Interdisciplinarity (Paris). We organize beginner’s workshops about programming and web development and longer project-based trainings.
+
+baseurl: ""
+url: ""
+
+twitter_username: cricodeclub
+github_username:  cricodeclub
+
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - publi.sh
+  - Rakefile
+
+# I18n
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css"]
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
