@@ -4,6 +4,10 @@ permalink: /
 lang: en
 ---
 
+# A code club, in Paris
+
+We organize open co-learning sessions every wednesday from 7pm to 9pm. Location: Tour Montparnasse, CRI, 20e étage, Computer room. 75015, Paris.
+
 ## Our actions
 
 - We have developed the pedagogical axis of the club through introduction workshops to programming and web developing tools such as git. The workshops were organized at CRI and open to all.

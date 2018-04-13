@@ -4,6 +4,10 @@ permalink: /
 lang: fr
 ---
 
+# Un club de code, dans Paris
+
+Nous nous réunissons tous les mercredis de 19h à 21h au 21e étage de la Tour Montparnasse, 75015 Paris. Ces sessions sont ouvertes à toutes et à tous (oui, oui !), nous appelons ça des sessions de "co-learning" où chacun vient avec ses envies et apprend à son rythme avec l'aide de ses pairs et des mentors présents.
+
 ## Nos actions
 
 - Nous avons développé l’axe pédagogique à travers des ateliers d’initiation à la programmation et aux outils de développement tels que git, organisés au CRI et ouverts à tous.

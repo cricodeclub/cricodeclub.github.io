@@ -6,7 +6,7 @@
 
   <title>
     {% if page.title %}
-      {{ page.title | escape }}
+      {{ site.title | escape }} - {{ page.title | escape }}
     {% else %}
       {{ site.title | escape }}
     {% endif %}
